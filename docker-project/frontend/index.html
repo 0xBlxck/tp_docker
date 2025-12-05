@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated title for EPSI students -->
+    <title>Liste des Élèves - Bachelor 3 SysOps EPSI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Updated header for EPSI context -->
+            <h1>🎓 Liste des Élèves EPSI</h1>
+            <p class="subtitle">Bachelor 3 SysOps - Application conteneurisée avec Docker</p>
+        </header>
+
+        <div class="status-section">
+            <div class="status-card">
+                <h2>Statut de l'API</h2>
+                <div id="api-status" class="status-indicator">
+                    <span class="loader"></span>
+                    <span>Vérification...</span>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="add-item-section">
+                <!-- Updated form for student addition -->
+                <h2>Ajouter un élève</h2>
+                <form id="add-item-form">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="item-name" 
+                            placeholder="Nom complet de l'élève" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <textarea 
+                            id="item-description" 
+                            placeholder="Spécialisation (ex: Sécurité & Infrastructure)"
+                            rows="3"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Ajouter</button>
+                </form>
+            </section>
+
+            <section class="items-section">
+                <div class="section-header">
+                    <!-- Updated section title for students -->
+                    <h2>Liste des élèves Bachelor 3 SysOps</h2>
+                    <button id="refresh-btn" class="btn-secondary">🔄 Actualiser</button>
+                </div>
+                
+                <div id="items-container">
+                    <div class="loader-container">
+                        <span class="loader"></span>
+                        <p>Chargement des items...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Projet TD - Application conteneurisée Docker</p>
+            <!-- Updated tech stack to Python -->
+            <p class="tech-stack">Python • Flask • PostgreSQL • Nginx</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

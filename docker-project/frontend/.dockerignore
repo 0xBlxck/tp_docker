@@ -1,0 +1,9 @@
+# Fichiers à exclure de l'image Docker
+.git
+.gitignore
+README.md
+*.md
+.DS_Store
+.vscode
+.idea
+node_modules

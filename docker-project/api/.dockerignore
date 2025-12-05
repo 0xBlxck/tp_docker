@@ -1,0 +1,32 @@
+# Fichiers Python à exclure
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environnement virtuel
+venv/
+env/
+ENV/
+
+# Documentation et fichiers de développement
+.git
+.gitignore
+README.md
+*.md
+.DS_Store
+.vscode
+.idea
+
+# Variables d'environnement et secrets
+.env
+.env.local
+.env.*.local
+
+# Tests et coverage
+.pytest_cache/
+htmlcov/
+.coverage
